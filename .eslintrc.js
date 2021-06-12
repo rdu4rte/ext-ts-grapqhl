@@ -19,6 +19,7 @@ module.exports = {
     '@typescript-eslint/array-type': 0,
     '@typescript-eslint/naming-convention': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-unused-expressions': 0,
     'import/export': 0,
     'eol-last': 0,
     semi: [2, 'never']

@@ -13,4 +13,10 @@ export default class UserRepository {
   async getUserById(id: string): Promise<User | null> {
     return await UserModel.findById(id)
   }
+
+  async create(data: User): Promise<User> {
+    const newUser = new UserModel(data)
+    await newUser.save()
+    return newUser
+  }
 }
