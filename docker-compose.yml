@@ -1,7 +1,16 @@
-version: 3
+version: '3'
 services:
-  mongodb:
-    image: 'mongo:latest'
+  app:
+    container_name: ts-graphql-sample
+    build: .
+    ports: 
+      - '3003:3003'
+    links:
+      - mongo
+    depends_on: 
+      - mongo
+  mongo:
+    container_name: mongo-sample
+    image: mongo
     ports:
-      - 27017:27017
-    container_name: mongo-sample-db
+      - 28017:28017

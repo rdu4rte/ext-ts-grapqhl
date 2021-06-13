@@ -28,10 +28,10 @@ export const config: Config = {
   gqlPath: env('GRAPHQL_PATH') || '/graphql',
   isDev: env('NODE_ENV') === 'development',
   mongoDb: {
-    uri: env('MONGODB_URI') || 'mongodb://localhost:27017/ezt-test',
-    host: env('MONGODB_HOST') || 'localhost',
-    port: +env('MONGODB_PORT') || 27017,
-    db: env('MONGODB_DB') || 'ezt-test'
+    uri: env('MONGODB_URI') || 'mongodb://localhost:27017/ezt-sample',
+    host: env('MONGODB_HOST') || 'mongo-sample',
+    port: +env('MONGODB_PORT') || 28017,
+    db: env('MONGODB_DB') || 'ezt-sample'
   },
   jwt: {
     secret: env('JWT_SECRET') || 'shh_th1s_1s_4_s3cr3t',

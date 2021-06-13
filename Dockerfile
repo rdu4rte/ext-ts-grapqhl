@@ -2,11 +2,12 @@ FROM node:14
 
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
+COPY package.json ./
+COPY yarn.lock ./
+RUN yarn install
 
 COPY . .
 
-EXPOSE 3033
+EXPOSE 3003
 
-CMD ["node", "server.ts"]
+CMD ["yarn", "dev"]
