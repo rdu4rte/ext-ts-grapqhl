@@ -10,6 +10,7 @@ export default class UserService {
   constructor(private readonly userRepository: UserRepository) { }
 
   public async getUsers(): Promise<User[]> {
+    console.log('a')
     return await this.userRepository.fetchUsers()
   }
 

@@ -6,3 +6,7 @@ dist
 
 # jest
 coverage
+
+# yarn
+yarn-error.log
+*.log

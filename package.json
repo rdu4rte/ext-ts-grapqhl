@@ -2,7 +2,7 @@
   "name": "ext-ts-graphql",
   "version": "1.0.0",
   "engines": {
-    "node": "14.x"
+    "node": "^16.x"
   },
   "description": "TypeGraphql Template",
   "main": "src/server.ts",
@@ -44,7 +44,7 @@
     "graphql": "^15.5.0",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.18",
+    "mongoose": "^5.12.13",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1",
     "typedi": "^0.10.0",
