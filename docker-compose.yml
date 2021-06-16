@@ -6,10 +6,9 @@ services:
       dockerfile: Dockerfile
       context: .
     command: yarn dev
+    restart: always
     ports: 
       - '3003:3003'
-    links:
-      - mongo
     depends_on: 
       - mongo
     networks:
@@ -18,7 +17,7 @@ services:
     container_name: mongo-sample
     image: mongo
     ports:
-      - 27017:28017
+      - 27017:27017
     networks:
       - local_dev_network
 networks:
